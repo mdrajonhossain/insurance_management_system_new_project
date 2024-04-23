@@ -43,7 +43,7 @@
     <!-- Hero Section -->
     <section class="hero-section text-center py-5 h-screen">
         <div class="container">
-            <h1>Welcome to Our Banks</h1>
+            <h1>Welcome to Our Insurance System</h1>
             <p class="lead">We are here to serve you with the best financial solutions</p>
             <a href="{{url('login') }}" class="btn btn-primary">Get Started</a>
         </div>
