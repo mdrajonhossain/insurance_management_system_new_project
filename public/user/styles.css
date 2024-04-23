@@ -1,0 +1,36 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+/* Style the sidebar links */
+.sidebar a {
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Change color on hover */
+.sidebar a:hover {
+    background-color: #ddd;
+}
+
+/* Style the content */
+.content {
+    margin-left: 0;
+    /* Adjusted for small devices */
+    padding: 20px;
+}
+
+/* For larger devices, adjust margin */
+@media (min-width: 768px) {
+    .content {
+        margin-left: 250px;
+    }
+}
