@@ -179,7 +179,7 @@
 
                         <h4
                             style="margin-top: 30px; padding-left: 40px; font-size: 20px; background-color: #006DD5; padding: 12px; color: #fff;font-size: 18px; line-height: 24px; margin-bottom: 0px;">
-                            Bank and Agent Details</h4>
+                            Insurance and Agent Details</h4>
 
                         <div class="row" style=" margin-top:20px;">
                             <!-- <div class="col-md-4">
@@ -192,7 +192,7 @@
 
                             <div class="col-md-4">
                                 <label for="bankSelect" class="form-label"
-                                    style="font-weight: bold; font-size: 14px;">Bank Name</label>
+                                    style="font-weight: bold; font-size: 14px;">Insurance Name</label>
                                 <span style="color: red; font-size: 13px; line-height: 18px;">*</span>
                                 <select onchange="bankchangeadd(this.value)" class="form-select" id="bankSelect"
                                     name="bankid" required>
