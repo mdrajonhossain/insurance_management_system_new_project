@@ -25,7 +25,7 @@
     <section class="hero-section py-5 h-screen">
         <div class="container">
             <div class="content">
-                <p style="font-size: 18px; color: black; margin-top: 20px;">New FDR Application</p>
+                <p style="font-size: 18px; color: black; margin-top: 20px; font-weight: bold;">New FDR Application</p>
                 <p style="font-size: 13px; color: #FF0000; line-height: 18px;">* marked fields are mandatory</p>
                 <div class="container" style="font-size: 12px !important; background: #F5F6F9; margin-bottom: 40px;">
                     <form action="{{url('/fdrformsend')}}" method="POST" enctype="multipart/form-data">
