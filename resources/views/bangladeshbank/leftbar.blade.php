@@ -12,13 +12,13 @@
 
     <a class="text-warning hover:text-info" href="{{ url('/bangladeshBank/bankregister') }}"
         style="font-size: 15px; font-weight: 500; text-decoration:none; {{ Request::is('bangladeshBank/bankregister') ? 'background-color: #ddd; color: blue;' : '' }}">
-        Register Bank</a>
+        Register Insurance</a>
     
     <a class="text-warning hover:text-info" href="{{ url('bangladeshBank/branchlist') }}"
-        style="font-size: 15px; font-weight: 500; text-decoration:none; {{ Request::is('bangladeshBank/branchlist') ? 'background-color: #ddd; color: blue;' : '' }}">Branch List</a>
+        style="font-size: 15px; font-weight: 500; text-decoration:none; {{ Request::is('bangladeshBank/branchlist') ? 'background-color: #ddd; color: blue;' : '' }}">Agent</a>
 
         <a class="text-warning hover:text-info" href="{{ url('bangladeshBank/banklist') }}"
-        style="font-size: 15px; font-weight: 500; text-decoration:none; {{ Request::is('bangladeshBank/banklist') ? 'background-color: #ddd; color: blue;' : '' }}">Bank List</a>
+        style="font-size: 15px; font-weight: 500; text-decoration:none; {{ Request::is('bangladeshBank/banklist') ? 'background-color: #ddd; color: blue;' : '' }}">Insurance Company</a>
         
 </div>
 
