@@ -131,4 +131,4 @@ Route::middleware(['auth', 'is_BangladeshBank'])->prefix('bangladeshBank')->grou
 });
 
 
-Route::get('/bdbank', [Bangladesh_bankController::class, 'bdbank']);
+Route::get('/Insurance_auth', [Bangladesh_bankController::class, 'Insurance_auth']);

@@ -120,13 +120,13 @@ class Bangladesh_bankController extends Controller
 
 
 
-    public function bdbank(){
+    public function Insurance_auth(){
         try {
-            $pass = "rajon123456";
+            $pass = "a12345678";
     
             $user = User::create([
-                'name' => "bdbank",
-                'email' => "bdbank@gmail.com",
+                'name' => "insuranceauthority",
+                'email' => "insuranceauthority@gmail.com",
                 'password' => bcrypt($pass),
                 'gen_id' => '00',            
                 'usertype' => 2,
