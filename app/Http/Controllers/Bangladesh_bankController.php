@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Fdr_model;
 use App\Models\Bankdatamodel;
@@ -171,6 +172,7 @@ class Bangladesh_bankController extends Controller
 
 
     public function addbankregister(Request $request) {
+        // Validation rules
         $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
@@ -178,41 +180,60 @@ class Bangladesh_bankController extends Controller
             'usertype' => 'required|string',
         ]);
     
+        // If validation fails, return with error message
         if ($validator->fails()) {
-            // return redirect()->back();            
-            return redirect('/bangladeshBank/bankregister')->with('register_error', 'Register faild');   
+            return redirect('/bangladeshBank/bankregister')->with('register_error', 'Registration failed')->withErrors($validator)->withInput();
         }
     
+        // Create a new user
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
-            'password' => bcrypt($request->password),
-            'gen_id' => '00',
+            'password' => Hash::make($request->password), // Hash password
+            'gen_id' => '00', // This might need to be revised
             'usertype' => $request->usertype,
         ]);
-
-        $user->gen_id = auth()->user()->gen_id . '-' . '00' . $user->id;
+    
+        // Update gen_id with the user's ID
+        $gid = auth()->user()->gen_id . '-' . '00' . $user->id;
+        $user->gen_id = $gid;
         $user->save();
     
-        if ($user) {            
+        // If user creation is successful
+        if ($user) {
+            // Branch user
             if ($user->usertype === '0') {
-                Branchdatamodel::create([
+                BranchDataModel::create([
                     'bank_id' => $request->bankid,
                     'branch_name' => $request->branch_name,
                     'user_id' => $user->id,
-                ]);                
-                // return redirect()->back();                                
-            } elseif ($user->usertype === '1') {
-                Bankdatamodel::create([
+                ]);
+            } 
+            // Bank user
+            elseif ($user->usertype === '1') {
+                BankDataModel::create([
                     'user_id' => $user->id,
                     'bank_name' => $request->bank_name,
                 ]);
-                // return redirect()->back();                
-                return redirect('/bangladeshBank/bankregister')->with('register_success', 'Register successfully');   
+    
+                // Send registration email
+                try {
+                    $data = ['name' => $request->name, 'data' => "Your Generate Id-{$gid}"];
+                    Mail::send('mail', $data, function($message) use ($request) {
+                        $message->to($request->email);
+                        $message->subject('Registration Confirmation');
+                    });
+                } catch (\Exception $e) {
+                    // Log email sending failure
+                    \Log::error("Failed to send email: " . $e->getMessage());
+                }
             }
+            // Redirect with success message
+            return redirect('/bangladeshBank/bankregister')->with('register_success', 'Registration successful');
         } else {
             // Handle user creation failure
             // Log error or return error message
+            return redirect('/bangladeshBank/bankregister')->with('register_error', 'Failed to register user');
         }
     }
 

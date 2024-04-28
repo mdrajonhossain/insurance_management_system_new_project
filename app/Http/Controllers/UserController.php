@@ -251,7 +251,7 @@ class UserController extends Controller{
     public function sendmail() {
         
         $data = ['name' => "Vishal", 'data' => "Hello Vishal"];
-        $user['to'] = "mottaleb.jebon@gmail.com";
+        $user['to'] = "mamunorrashidrajon@gmail.com";
 
         try {
             Mail::send('mail', $data, function($message) use ($user) {
