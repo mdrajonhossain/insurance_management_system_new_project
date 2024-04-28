@@ -24,7 +24,7 @@
     <!-- Content -->
     <div class="content">
         <div class="table-responsive">
-            <div class="bg-info text-white p-3 mb-5">Branch Dashboard</div>
+            <div class="bg-info text-white p-3 mb-5">Agent Dashboard</div>
 
             <div class="container">
                 <div class="row">

@@ -46,6 +46,8 @@
             <h1>Welcome to Our Insurance System</h1>
             <p class="lead">We are here to serve you with the best financial solutions</p>
             <a href="{{url('login') }}" class="btn btn-primary">Get Started</a>
+
+            <a href="{{url('/sendmail') }}" class="btn btn-primary">Get send mail</a>
         </div>
     </section>
 

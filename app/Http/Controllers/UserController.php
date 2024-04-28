@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+// use Mail;
+use Illuminate\Support\Facades\Mail;
+
 use Illuminate\Support\Facades\Auth;
 use App\Models\Fdr_model;
 use App\Models\Bankdatamodel;
@@ -13,6 +16,8 @@ use App\Models\VerifiedserviceId;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+
+
 
 
 
@@ -240,6 +245,26 @@ class UserController extends Controller{
     }
 
     
+
+
+
+    public function sendmail() {
+        
+        $data = ['name' => "Vishal", 'data' => "Hello Vishal"];
+        $user['to'] = "mottaleb.jebon@gmail.com";
+
+        try {
+            Mail::send('mail', $data, function($message) use ($user) {
+                $message->to($user['to']);
+                $message->subject('Hello Dev');
+            });
+            echo "Email sent successfully!";
+        } catch (\Exception $e) {
+            echo "Failed to send email: " . $e->getMessage();
+        }
+
+        
+    }
 
 
 

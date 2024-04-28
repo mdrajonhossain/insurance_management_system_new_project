@@ -29,6 +29,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/sendmail', [UserController::class, 'sendmail']);
 
 // Route::post('/user_register', [UserController::class, 'userregister']);
 Route::post('/logine', [UserController::class, 'login']);
