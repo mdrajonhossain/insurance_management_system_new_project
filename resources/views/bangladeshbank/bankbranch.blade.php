@@ -23,7 +23,7 @@
 
     <!-- Content -->
     <div class="content">        
-        <h2 style="margin-top: 75px; margin-bottom: 30px; font-size: 25px; font-weight: bolder;">All Branch</h2>
+        <h2 style="margin-top: 75px; margin-bottom: 30px; font-size: 25px; font-weight: bolder;">All Agent</h2>
         <div class="table-responsive">
             Branch List
         </div>
