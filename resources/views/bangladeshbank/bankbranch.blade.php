@@ -32,8 +32,8 @@
                     <tr>
                         <th style="font-size: 14px; color: rgb(33, 111, 237);">UserName</th>
                         <th style="font-size: 14px; color: rgb(33, 111, 237);">Email</th>
-                        <th style="font-size: 14px; color: rgb(33, 111, 237);">Branch</th>
-                        <th style="font-size: 14px; color: rgb(33, 111, 237);">Bank</th>                        
+                        <th style="font-size: 14px; color: rgb(33, 111, 237);">Agent</th>
+                        <th style="font-size: 14px; color: rgb(33, 111, 237);">Insurance</th>                        
                         <th style="font-size: 14px; color: rgb(33, 111, 237);">Status</th>
                     </tr>
                 </thead>
