@@ -46,7 +46,7 @@
                             <div class="container text-center">
                                 <div class="btn-group btn-group-block" role="group" aria-label="Button group">
                                     <a href="{{ url('/bangladeshBank/bankfrom_branch/' . $info->userId) }}"
-                                    class="btn btn-light bg-warning">Branch</a>
+                                    class="btn btn-light bg-warning">Agent</a>
                                     <a href="{{ url('/bangladeshBank/status/' . $info->userId . '/' . ($info->is_active == 1 ? 0 : 1)) }}"
                                         class="btn btn-{{ $info->is_active == 1 ? 'info' : 'danger' }}">{{ $info->is_active == 1 ? "Active" : "Inactive" }}</a>
                                 </div>

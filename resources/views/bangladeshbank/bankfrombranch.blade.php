@@ -24,15 +24,15 @@
     <!-- Content -->
     <div class="content">
         <a style="margin-top: 50px; margin-bottom: 10px;" href="{{ url('/bangladeshBank/banklist/') }}" class="btn btn-light bg-warning">Back</a>
-        <h2 style="margin-bottom: 30px; font-size: 25px; font-weight: bolder;">Branch List</h2>
+        <h2 style="margin-bottom: 30px; font-size: 25px; font-weight: bolder;">Agent List</h2>
         <div class="table-responsive">
             <table id="example" class="table table-striped table-bordered" style="width:100%">
                 <thead>
                     <tr>
                         <th style="font-size: 14px; color: rgb(33, 111, 237);">UserName</th>
                         <th style="font-size: 14px; color: rgb(33, 111, 237);">UserEmail</th>
-                        <th style="font-size: 14px; color: rgb(33, 111, 237);">Bank</th>
-                        <th style="font-size: 14px; color: rgb(33, 111, 237);">Branch</th>
+                        <th style="font-size: 14px; color: rgb(33, 111, 237);">Insurance</th>
+                        <th style="font-size: 14px; color: rgb(33, 111, 237);">Agent</th>
                         <th style="font-size: 14px; color: rgb(33, 111, 237);">Status</th>
                     </tr>
                 </thead>
