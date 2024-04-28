@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bank</title>
+    <title> Insurance Company</title>
     <!-- Bootstrap CSS -->
     <link href="{{ asset('public/user/styles.css') }}" rel="stylesheet" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -23,15 +23,15 @@
 
     <!-- Content -->
     <div class="content">
-        <h2 style="font-size: 20px; font-weight: bolder; margin-top: 05px; margin-bottom: 30px;">All Branch</h2>
+        <h2 style="font-size: 20px; font-weight: bolder; margin-top: 05px; margin-bottom: 30px;">All Agent</h2>
         <div class="table-responsive">
             <table id="example" class="table table-striped table-bordered" style="width:100%">
                 <thead>
                     <tr>
                         <th style="font-size: 14px; color: rgb(33, 111, 237);">UserName</th>
                         <th style="font-size: 14px; color: rgb(33, 111, 237);">UserEmail</th>
-                        <th style="font-size: 14px; color: rgb(33, 111, 237);">Bank</th>                        
-                        <th style="font-size: 14px; color: rgb(33, 111, 237);">Branch</th>                        
+                        <th style="font-size: 14px; color: rgb(33, 111, 237);">Insurance</th>                        
+                        <th style="font-size: 14px; color: rgb(33, 111, 237);">Agent</th>                        
                         <th style="font-size: 14px; color: rgb(33, 111, 237);">Status</th>
                     </tr>
                 </thead>

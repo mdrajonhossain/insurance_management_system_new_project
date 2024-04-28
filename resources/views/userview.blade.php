@@ -53,21 +53,21 @@
     </tr>
 
     <tr class="bg-{{$data->branch_verifyed == 1 ? 'info' : 'danger' }} text-white">
-        <td>Branch Status</td>
+        <td>Agent Status</td>
         <td>{{$data->branch_verifyed == 1 ? "Verified" : "Not verified" }} 
             <!-- / {{$data->branch_comment}} -->
         </td>
     </tr>
 
     <tr class="bg-{{$data->brank_verifyed == 1 ? 'info' : 'danger' }} text-white">
-        <td>Bank Status</td>
+        <td>Insurance Status</td>
         <td>{{$data->brank_verifyed == 1 ? "Verified" : "Not verified" }} 
             <!-- / {{$data->bank_comment}} -->
         </td>
     </tr>
 
     <tr class="bg-{{$data->bdbank_verifyed == 1 ? 'info' : 'danger' }} text-white">
-        <td>Bangladesh Bank Status</td>
+        <td>Insurance Authority Status</td>
         <td>{{$data->bdbank_verifyed == 1 ? "Verified" : "Not verified" }} 
             <!-- / {{$data->bdbank_comment}} -->
         </td>

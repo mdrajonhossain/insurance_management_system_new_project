@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bangladesh Bank</title>
+    <title> Insurance Company</title>
     <!-- Bootstrap CSS -->
     <link href="{{ asset('public/user/styles.css') }}" rel="stylesheet" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -99,8 +99,8 @@
                             <!-- Bank Fields -->
                             <div class="bank" id="bankFields">
                                 <div class="form-group row">
-                                    <label for="branch-name" class="col-md-4 col-form-label text-md-right">Branch
-                                        Name</label>
+                                    <label for="branch-name" class="col-md-4 col-form-label text-md-right">
+                                    Agent Name</label>
                                     <div class="col-md-6">
                                         <input type="text" id="branch-name" class="form-control" name="branch_name">
                                     </div>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bangladesh Bank</title>
+    <title>Insurance Authority</title>
     <!-- Bootstrap CSS -->
     <link href="{{ asset('public/user/styles.css') }}" rel="stylesheet" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -23,16 +23,16 @@
 
     <!-- Content -->
     <div class="content">
-        <h2 style="margin-top: 75px; margin-bottom: 30px; font-size: 25px; font-weight: bolder;">Bank List</h2>
+        <h2 style="margin-top: 75px; margin-bottom: 30px; font-size: 25px; font-weight: bolder;">Insurance Company</h2>
         <div class="table-responsive">
             <table id="example" class="table table-striped table-bordered" style="width:100%">
                 <thead>
                     <tr>
                         <th style="font-size: 14px; color: rgb(33, 111, 237);">UserName</th>
                         <th style="font-size: 14px; color: rgb(33, 111, 237);">Generate_id</th>
-                        <th style="font-size: 14px; color: rgb(33, 111, 237);">Bank Name</th>
+                        <th style="font-size: 14px; color: rgb(33, 111, 237);">Insurance Company Name</th>
                         <th style="font-size: 14px; color: rgb(33, 111, 237);">Email</th>
-                        <th class="text-center" style="font-size: 14px; color: rgb(33, 111, 237);">Bank Status</th>
+                        <th class="text-center" style="font-size: 14px; color: rgb(33, 111, 237);">Insurance Status</th>
                     </tr>
                 </thead>
                 <tbody>

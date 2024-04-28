@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bank</title>
+    <title> Insurance Company</title>
     <!-- Bootstrap CSS -->
     <link href="{{ asset('public/user/styles.css') }}" rel="stylesheet" />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -30,13 +30,13 @@
                     <tr>
                         <th style="font-size: 14px; color: rgb(33, 111, 237);">Name</th>
                         <th style="font-size: 14px; color: rgb(33, 111, 237);">Phone</th>
-                        <th style="font-size: 14px; color: rgb(33, 111, 237);">Bank</th>
-                        <th style="font-size: 14px; color: rgb(33, 111, 237);">Branch</th>
+                        <th style="font-size: 14px; color: rgb(33, 111, 237);">Insurance</th>
+                        <th style="font-size: 14px; color: rgb(33, 111, 237);">Agent</th>
                         <th style="font-size: 14px; color: rgb(33, 111, 237);">Application type</th>
                         <th style="font-size: 14px; color: rgb(33, 111, 237);">Id</th>
                         <th style="font-size: 14px; color: rgb(33, 111, 237);">Verify</th>
                         <th style="font-size: 14px; color: rgb(33, 111, 237);">View</th>
-                        <th style="font-size: 14px; color: rgb(33, 111, 237);">Branch Status</th>
+                        <th style="font-size: 14px; color: rgb(33, 111, 237);">Agent Status</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -50,8 +50,7 @@
                         <td>{{$info->genarate_id }}</td>
                         <!-- <td>{{ $info->branch_verifyed == 0 ? "False" : "True" }}</td> -->
                         <td>
-                            @if($info->branch_verifyed)
-                            
+                            @if($info->branch_verifyed)                            
                             @if($info->brank_verifyed == 1)
                             <span class="text-info">Verified</div>
                             @else
@@ -61,7 +60,7 @@
                             @endif
                             
                             @else
-                            Branch not Received
+                            Agent not Received
                         @endif
         </td>
         <td>
