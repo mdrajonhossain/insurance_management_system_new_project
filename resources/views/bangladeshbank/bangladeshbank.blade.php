@@ -29,14 +29,14 @@
                 <thead>
                     <tr>
                         <th style="font-size: 14px; color: rgb(33, 111, 237);">Name</th>                        
-                        <th style="font-size: 14px; color: rgb(33, 111, 237);">Bank</th>
-                        <th style="font-size: 14px; color: rgb(33, 111, 237);">Branch</th>
+                        <th style="font-size: 14px; color: rgb(33, 111, 237);">Insurance</th>
+                        <th style="font-size: 14px; color: rgb(33, 111, 237);">Agent</th>
                         <th style="font-size: 14px; color: rgb(33, 111, 237);">Application type</th>                        
                         <th style="font-size: 14px; color: rgb(33, 111, 237);">Id</th>                        
                         <th style="font-size: 14px; color: rgb(33, 111, 237);">User Name</th>                        
                         <th style="font-size: 14px; color: rgb(33, 111, 237);">Verify</th>
                         <th style="font-size: 14px; color: rgb(33, 111, 237);">View</th>
-                        <th style="font-size: 14px; color: rgb(33, 111, 237);">Bank Status</th>
+                        <th style="font-size: 14px; color: rgb(33, 111, 237);">Insurance Status</th>
                     </tr>
                 </thead>
                 <tbody>
