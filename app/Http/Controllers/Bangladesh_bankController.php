@@ -99,7 +99,7 @@ class Bangladesh_bankController extends Controller
         ->leftJoin('bankdatamodels', 'bankdatamodels.id', '=', 'branchdatamodels.bank_id')
         ->leftJoin('users', 'users.id', '=', 'branchdatamodels.user_id')->get();    
 
-        return view('bangladeshbank.branch_list', ['data'=> $data]);
+        return view('bangladeshbank.bankbranch', ['data'=> $data]);
     }
 
 
